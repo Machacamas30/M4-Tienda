@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+<title>Formulario de Sugerencias</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1> <a href="../index" > Volver al Inicio</a></h1> <!--HAY QUE CAMBIAR EL HREF -->
+
+
+<form action="datos.php" method="get" enctype="multipart/form-data">
+
+<h2> Formulario de Sugerencias</h2>
+
+<fieldset>
+
+<legend>Datos Personales </legend>
+
+<br/>
+
+Cortesía:
+<br/>
+<input type="radio" name="Cortesía" value="Sr." checked="checked required" /> Sr.
+<input type="radio" name="Cortesía" value="Sra." checked="checked required" /> Sra.
+
+<br/>
+<br/>
+
+Usuario:<br/>
+<input type="text" name="nombre" value="" size="20" maxlength="30" required/>
+
+<br/>
+<br/>
+
+<label for="email">Correo electrónico:</label>
+
+<br/>
+
+<input type="email" id="email" name="email" required>
+<br/>
+<br/>
+
+	País:
+<select name="pais">
+   <option value="1">España</option> 
+   <option value="2">Portugal</option> 
+   <option value="3">Andorra</option>
+   <option value="4">Francia</option> 
+   <option value="5">Alemania</option> 
+   <option value="6">Inglaterra</option> 
+   <option value="7">Marruecos</option>
+   <option value="8">Belgica</option> 
+   <option value="9">Holanda</option> 
+   <option value="10">Rusia</option> 
+   <option value="11">Estados Unidos</option>
+   <option value="12">Mónaco</option> 
+   <option value="13">Irlanda</option> 
+
+</select>
+
+</fieldset>
+
+<br/>
+
+<fieldset>
+
+<legend>Sugerencias </legend>
+
+<br/>
+
+ <label for="quantity">Escribe a continuación tu sugerencia:</label><br/>
+<textarea name="message" rows="10" cols="80" required>
+</textarea>
+<br/>
+
+</fieldset>
+
+<br/>
+
+<fieldset>
+
+<legend> Autorización </legend>
+
+<br/>
+
+He leído y acepto la política de privacidad:
+<br/>
+<input type="radio" name="Autorizo1" value="SI" checked="checked required" /> SI
+<input type="radio" name="Autorizo1" value="NO" checked="checked required" /> NO 
+
+<br/>
+<br/>
+
+Autorizo el  uso  de  mis  datos  personales  con  la  finalidad  de  recibir  información 
+relativa al trámite:
+<br/>
+<input type="radio" name="Autorizo2" value="SI" checked="checked required" /> SI
+<input type="radio" name="Autorizo2" value="NO" checked="checked required" /> NO 
+</fieldset>
+
+<br/>
+<input type="reset" name="Borrar" value="Borrar datos del formulario" />
+<input type="submit" name="Enviar" value="Enviar Formulario" />
+<br/>
+
+</form>
+</body>
+</html>
