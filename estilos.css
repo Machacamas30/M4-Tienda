@@ -101,10 +101,10 @@ body {
 
 .foto4 {
     width: 250px;
-    height: 200px;
+    height: 400px;
     margin-left: 350px;
     flex: 1;
-    
+
 }
 
 .padre2 {
@@ -115,11 +115,19 @@ body {
 }
 
 .texto4 {
-   
+
     top: 0%;
     width: 41%;
     flex: 1;
     margin-left: 350px;
 
 
+
+}
+
+.texto2 {
+    top: 0%;
+    width: 41%;
+    flex: 1;
+    margin-left: 25px;
 }
