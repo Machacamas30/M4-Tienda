@@ -3,112 +3,130 @@
 <html lang="es">
 
 <head>
-<title>Formulario de Sugerencias</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="og:type" content="article" />
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1> <a href="../index" > Volver al Inicio</a></h1> <!--HAY QUE CAMBIAR EL HREF -->
+   <div class="header">
 
 
-<form action="datos.php" method="get" enctype="multipart/form-data">
+      <nav class="cara">
+         <img src="../imagenes/logo.PNG" class="icono">
+      </nav>
 
-<h2> Formulario de Sugerencias</h2>
+      <nav class="Menú1">
+         <ul style="list-style-type: none;">
+            <li><a>Inici</a></li>
+            <li><a>Videos</a></li>
+            <li><a>Galeria</a></li>
+            <li><a>Sugerencies</a></li>
 
-<fieldset>
+         </ul>
+      </nav>
 
-<legend>Datos Personales </legend>
+   </div>
+   <div class="papi">
 
-<br/>
+      <form action="datos.php" method="get" enctype="multipart/form-data">
 
-Cortesía:
-<br/>
-<input type="radio" name="Cortesía" value="Sr." checked="checked required" /> Sr.
-<input type="radio" name="Cortesía" value="Sra." checked="checked required" /> Sra.
+         <h2> Formulario de Sugerencias</h2>
 
-<br/>
-<br/>
+         <fieldset>
 
-Usuario:<br/>
-<input type="text" name="nombre" value="" size="20" maxlength="30" required/>
+            <legend>Datos Personales </legend>
 
-<br/>
-<br/>
+            <br />
 
-<label for="email">Correo electrónico:</label>
+            Cortesía:
+            <br />
+            <input type="radio" name="Cortesía" value="Sr." checked="checked required" /> Sr.
+            <input type="radio" name="Cortesía" value="Sra." checked="checked required" /> Sra.
 
-<br/>
+            <br />
+            <br />
 
-<input type="email" id="email" name="email" required>
-<br/>
-<br/>
+            Usuario:<br />
+            <input type="text" name="nombre" value="" size="20" maxlength="30" required />
 
-	País:
-<select name="pais">
-   <option value="1">España</option> 
-   <option value="2">Portugal</option> 
-   <option value="3">Andorra</option>
-   <option value="4">Francia</option> 
-   <option value="5">Alemania</option> 
-   <option value="6">Inglaterra</option> 
-   <option value="7">Marruecos</option>
-   <option value="8">Belgica</option> 
-   <option value="9">Holanda</option> 
-   <option value="10">Rusia</option> 
-   <option value="11">Estados Unidos</option>
-   <option value="12">Mónaco</option> 
-   <option value="13">Irlanda</option> 
+            <br />
+            <br />
 
-</select>
+            <label for="email">Correo electrónico:</label>
 
-</fieldset>
+            <br />
 
-<br/>
+            <input type="email" id="email" name="email" required>
+            <br />
+            <br />
 
-<fieldset>
+            País:
+            <select name="pais">
+               <option value="1">España</option>
+               <option value="2">Portugal</option>
+               <option value="3">Andorra</option>
+               <option value="4">Francia</option>
+               <option value="5">Alemania</option>
+               <option value="6">Inglaterra</option>
+               <option value="7">Marruecos</option>
+               <option value="8">Belgica</option>
+               <option value="9">Holanda</option>
+               <option value="10">Rusia</option>
+               <option value="11">Estados Unidos</option>
+               <option value="12">Mónaco</option>
+               <option value="13">Irlanda</option>
 
-<legend>Sugerencias </legend>
+            </select>
 
-<br/>
+         </fieldset>
 
- <label for="quantity">Escribe a continuación tu sugerencia:</label><br/>
-<textarea name="message" rows="10" cols="80" required>
-</textarea>
-<br/>
+         <br />
 
-</fieldset>
+         <fieldset>
 
-<br/>
+            <legend>Sugerencias </legend>
 
-<fieldset>
+            <br />
 
-<legend> Autorización </legend>
+            <label for="quantity">Escribe a continuación tu sugerencia:</label><br />
+            <textarea name="message" rows="10" cols="80" required></textarea>
+            <br />
 
-<br/>
+         </fieldset>
 
-He leído y acepto la política de privacidad:
-<br/>
-<input type="radio" name="Autorizo1" value="SI" checked="checked required" /> SI
-<input type="radio" name="Autorizo1" value="NO" checked="checked required" /> NO 
+         <br />
 
-<br/>
-<br/>
+         <fieldset>
 
-Autorizo el  uso  de  mis  datos  personales  con  la  finalidad  de  recibir  información 
-relativa al trámite:
-<br/>
-<input type="radio" name="Autorizo2" value="SI" checked="checked required" /> SI
-<input type="radio" name="Autorizo2" value="NO" checked="checked required" /> NO 
-</fieldset>
+            <legend> Autorización </legend>
 
-<br/>
-<input type="reset" name="Borrar" value="Borrar datos del formulario" />
-<input type="submit" name="Enviar" value="Enviar Formulario" />
-<br/>
+            <br />
 
-</form>
+            He leído y acepto la política de privacidad:
+            <br />
+            <input type="radio" name="Autorizo1" value="SI" checked="checked required" /> SI
+            <input type="radio" name="Autorizo1" value="NO" checked="checked required" /> NO
+
+            <br />
+            <br />
+
+            Autorizo el uso de mis datos personales con la finalidad de recibir información
+            relativa al trámite:
+            <br />
+            <input type="radio" name="Autorizo2" value="SI" checked="checked required" /> SI
+            <input type="radio" name="Autorizo2" value="NO" checked="checked required" /> NO
+         </fieldset>
+
+         <br />
+         <input type="reset" name="Borrar" value="Borrar datos del formulario" />
+         <input type="submit" name="Enviar" value="Enviar Formulario" />
+         <br />
+
+      </form>
+   </div>
 </body>
+
 </html>
