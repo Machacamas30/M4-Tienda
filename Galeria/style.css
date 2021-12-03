@@ -1,0 +1,37 @@
+.papigaleria {
+    display: flex;
+    flex-direction: row;
+}
+
+.Video1 {
+    text-align: left;
+    margin: auto;
+
+}
+
+.TextoVideo1 {
+    text-align: center;
+    
+}
+
+.Video2 {
+    text-align: center;
+    margin: auto;
+}
+
+.Video3 {
+    text-align: right;
+    margin: auto;
+
+}
+
+.TextoVideo3 {
+    text-align: center;
+
+}
+
+#fondo{
+    background-image: url(../imagenes/coco.jpg);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode:lighten ;
+}
