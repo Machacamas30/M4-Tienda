@@ -3,7 +3,6 @@
     display: flex;
     /* margin-bottom: 50px;  */
     flex: 1;
-
 }
 
 .Menú1 {
@@ -11,37 +10,25 @@
     width: auto;
     margin-top: 50px;
     margin-left: 1100px;
-
 }
-
-
 
 .Menú1 ul li {
     float: left;
 }
 
-
-
 .Menú1 ul li a {
-
     font-size: 18px;
     padding: 25px 20px;
     display: inline-block;
-
 }
-
-
-
 
 .Menú1 ul li a i {
     padding-right: 10px;
-
 }
 
 .icono {
     width: 200px;
     margin-left: 40px;
-
 }
 
 .papi {
@@ -53,12 +40,10 @@
 .Video1 {
     text-align: left;
     margin: auto;
-
 }
 
 .TextoVideo1 {
     text-align: center;
-
 }
 
 .Video2 {
@@ -69,12 +54,14 @@
 .Video3 {
     text-align: right;
     margin: auto;
-
 }
 
 .TextoVideo3 {
     text-align: center;
+}
 
+iframe {
+    border-width: 0px;
 }
 
 #fondo {
