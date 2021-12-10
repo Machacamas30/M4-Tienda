@@ -1,1 +1,0 @@
-Gracias por enviar su sugerencia
