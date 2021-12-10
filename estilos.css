@@ -1,7 +1,11 @@
-body {
+.back {
     background-image: url(imagenes/coco.jpg);
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
 
 }
 
@@ -31,7 +35,7 @@ body {
     display: flex;
     width: auto;
     margin-top: 50px;
-    margin-left: 1100px;
+    margin-left: 750px;
 
 }
 
@@ -68,14 +72,13 @@ body {
     top: 0%;
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
-    
-  width: 100%;
-    
+    width: 75%;
+
 
 }
 
 .foto1 {
-    width: 1890px;
+    width: 1505px;
     height: 440px;
     margin: auto;
 }
@@ -86,7 +89,8 @@ body {
     display: flex;
     flex-flow: row;
     width: 100%;
-    
+   
+
 
 }
 
@@ -94,8 +98,8 @@ body {
     width: 260px;
     height: 200px;
     flex: 1;
-    margin-right: 370px;
-    margin-left: 20px;
+    margin-right: 200px;
+    /* margin-left: 20px; */
 
 
 }
@@ -109,7 +113,7 @@ body {
 .foto4 {
     width: 250px;
     height: 400px;
-    margin-left: 350px;
+    margin-left: 170px;
     flex: 1;
 
 }
@@ -117,7 +121,7 @@ body {
 .padre2 {
     display: flex;
     flex-direction: column;
-    
+
 
 
 }
@@ -127,7 +131,7 @@ body {
     top: 0%;
     width: 41%;
     flex: 1;
-    margin-left: 350px;
+    margin-left: 220px;
 
 
 
@@ -142,20 +146,22 @@ body {
 
 .texto3 {
     flex: 1;
-   
+
 }
 
 .padre4 {
     display: flex;
     flex-direction: column;
-    
+    margin-left: auto;
+   
+
 
 }
 
 .padre3 {
     display: flex;
     flex-direction: column;
-    
+
     margin-left: 200px;
-   
+
 }
