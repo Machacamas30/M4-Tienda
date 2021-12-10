@@ -1,0 +1,46 @@
+/* banner */
+section.banner{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: red;
+}
+
+section.banner img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* padre */
+padre{
+    margin: 2% auto;
+    max-width: 100%;
+    width: 1500px;
+    padding: 0 10px;
+
+}
+padre section{
+    width: 100%;
+    min-height: 200px;
+    padding: 25px 5px;
+    border-radius: 5px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+}
+
+padre section div{
+    background-color: white;
+    border-radius: 4px;
+}
+
+padre section div img{
+    width: 100%;
+    padding: 50px 130px;
+}
+
+padre section div p {
+    padding: 10px 40px;
+}

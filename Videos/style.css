@@ -1,0 +1,36 @@
+/* padre */
+padre{
+    margin: 2% auto;
+    max-width: 100%;
+    width: 1500px;
+    padding: 0 10px;
+
+}
+padre section{
+    width: 100%;
+    min-height: 200px;
+    padding: 25px 5px;
+    border-radius: 5px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+}
+
+padre section div{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.157);
+}
+
+
+padre section div h1{
+    font-weight: 400;
+    font-size: 35px;
+    padding: 20px;
+}

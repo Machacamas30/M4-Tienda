@@ -1,0 +1,43 @@
+/* main */
+main{
+    margin: 2% auto;
+    max-width: 100%;
+    width: 730px;
+    padding: 0 10px;
+
+}
+main section{
+    width: 100%;
+    min-height: 200px;
+    padding: 25px 5px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 25px;
+}
+main section h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+fieldset{
+    color: black;
+    padding: 10px;
+}
+
+.enviar,
+.reset{
+    background-color: royalblue;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.reset{
+    background-color: red;
+}

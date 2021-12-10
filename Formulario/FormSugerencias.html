@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Para que se pueda leer en todos los navegadores -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viewport;Responsive-->
+    <meta http-equiv="refresh" content="30">
+    <!-- Para que la página se actualice cada 30 sec -->
+    <title>Formulario de Sugerencias</title>
+    <!-- Title es el título de la página y sale arriba en el buscador -->
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Sin esto no detecta la hoja de estilos-->
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- Empieza el Header-->
+        <img src="../imagenes/logo2.png" alt="">
+        <!-- Hay que poner el atributo alt cuando insertamos la imagen, da error por lo contrario-->
+        <ul>
+            <li><a href="../index.html" title="Inici">Inicio</a></li>
+            <li><a href="../Videos/Videos.html" title="Videos">Videos</a></li>
+            <li><a href="../Galeria/Galeria.html" title="Galeria">Galeria</a></li>
+            <li><a class="active" href="../Formulario/FormSugerencias.html" title="formulario">Sugerencias</a></li>
+            <!-- la clase active es para que el formulario sea responsive-->
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h1>Formulario de sugerencias</h1>
+            <form action="datos.php" method="get" enctype="multipart/form-data"> <!-- Empieza el Formulario-->
+                <!-- Utilizamos el metodo get y mandamos los datos del formulario al archivo datos.php-->    
+                <fieldset>
+    
+                    <legend>Datos Personales </legend>
+    
+                    <br /> Cortesía:
+                    <br />
+                    <input type="radio" name="Cortesía" value="Sr." /> Sr.
+                    <input type="radio" name="Cortesía" value="Sra." /> Sra.
+                    <input type="radio" name="Cortesía" value="X" /> X.
+    
+                    <br />
+                    <br /> Usuario:
+    
+                    <br />
+                    <input type="text" name="nombre" value="" size="20" maxlength="30" required />
+                    <!-- Podemos darle margenes dentro del propio input o ponerlos en el css-->
+    
+                    <br />
+                    <br />
+    
+                    <label for="email">Correo electrónico:</label>
+    
+                    <br />
+    
+                    <input type="email" id="email" name="email" required>
+                    <!-- Añadimos el type email para que sea obligatorio añadir algo parecido a un email con su @ y .# -->
+                    <br />
+                    <br /> País:
+                    <select name="pais">
+                        <option value="1">España</option>
+                        <option value="2">Portugal</option>
+                        <option value="3">Andorra</option>
+                        <option value="4">Francia</option>
+                        <option value="5">Alemania</option>
+                        <option value="6">Inglaterra</option>
+                        <option value="7">Marruecos</option>
+                        <option value="8">Belgica</option>
+                        <option value="9">Holanda</option>
+                        <option value="10">Rusia</option>
+                        <option value="11">Estados Unidos</option>
+                        <option value="12">Mónaco</option>
+                        <option value="13">Irlanda</option>
+    
+                    </select>
+    
+                </fieldset>
+    
+                <br />
+    
+                <fieldset>
+    
+                    <legend>Sugerencias </legend>
+    
+                    <br />
+    
+                    <label>Escribe a continuación tu sugerencia:</label><br />
+                    <textarea name="message" rows="10" cols="80" style="width: 100%" required></textarea>
+                    <!-- Para que el usuario pueda escribir un texto he puesto la etiqueta textarea y le he puesto medidas dentro de la misma-->
+                    <br />
+    
+                </fieldset>
+    
+                <br />
+    
+                <fieldset>
+    
+                    <legend> Autorización </legend>
+    
+                    <br /> Este formulario recopila tu nombre, correo electrónico y contenido para que podamos realizar un
+                    seguimiento de las sugerencias para la web. Para más información revisa la <a
+                        href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673&p=20210527&tn=0">Ley Orgánica 3/2018</a>
+                    y el <a href="https://rgpd.es">Reglamento General de Protección de Datos</a>, donde encontrarás más
+                    información sobre dónde, cómo y por qué almacenamos tus datos.
+                    <br /> <!-- La etiqueta <a> sirve para insertar un link a una serie de palabras, en este caso lo he utilizado para insertar el link de las leyes mencionadas-->
+                    <input type="radio" name="Autorizo1" value="SI" /> SI
+                    <input type="radio" name="Autorizo1" value="NO" /> NO
+    
+                    <br />
+                </fieldset>
+    
+                <br />
+                <input type="reset" class="reset" name="Borrar" value="Borrar datos del formulario" />
+                <input type="submit" class="enviar"  name="Enviar" value="Enviar Formulario" />
+                <br />
+    <!-- Acaba el Formulario-->
+            </form>
+        </section>
+    </main>
+</body>
+</html>
