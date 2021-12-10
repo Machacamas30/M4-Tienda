@@ -13,15 +13,15 @@ section.banner img{
 }
 
 
-/* padre */
-padre{
+/* main */
+main{
     margin: 2% auto;
     max-width: 100%;
     width: 1500px;
     padding: 0 10px;
 
 }
-padre section{
+main section{
     width: 100%;
     min-height: 200px;
     padding: 25px 5px;
@@ -31,16 +31,16 @@ padre section{
     grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
 }
 
-padre section div{
+main section div{
     background-color: white;
     border-radius: 4px;
 }
 
-padre section div img{
+main section div img{
     width: 100%;
     padding: 50px 130px;
 }
 
-padre section div p {
+main section div p {
     padding: 10px 40px;
 }

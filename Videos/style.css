@@ -1,12 +1,12 @@
-/* padre */
-padre{
+/* main */
+main{
     margin: 2% auto;
     max-width: 100%;
     width: 1500px;
     padding: 0 10px;
 
 }
-padre section{
+main section{
     width: 100%;
     min-height: 200px;
     padding: 25px 5px;
@@ -16,7 +16,7 @@ padre section{
     grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
 }
 
-padre section div{
+main section div{
     background: white;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@ padre section div{
 }
 
 
-padre section div h1{
+main section div h1{
     font-weight: 400;
     font-size: 35px;
     padding: 20px;
